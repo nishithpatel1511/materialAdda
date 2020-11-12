@@ -1,23 +1,66 @@
-/*h1{
-	text-align: center;
-	margin-top: 0px;
-	padding: 25px;
+#navbarSupportedContent{
+	padding-left: 270px;
+	padding-right: 10px;
+
+}
+
+#main_navbar{
+	height: 80px;
 	background-color: black;
+}
+
+/*orange colour*/
+#main_navbar h2{
+      color: orange;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: orange;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: orange;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: blue;
+}
+.dropdown-item{
+	color: powderblue;
+}
+
+/*dropdown*/
+.dropdown-menu{
+	background-color: black;
+}
+
+
+.navbar-toggler{
+	background-color: white;
+}
+.nav-item{
 	color: orange;
 }
-.hr-menu{
-	margin-top: -40PX;
+
+/*media quer*/
+@media (max-width: 576px) {
+    #navbarSupportedContent{
+	padding-left: 0px;
+	padding-right: 0px;
+
 }
-.hr-menu h2{
-	float: left;
-    padding-right: 60px;
-    background-color: powderblue;
-    padding-left: 60px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}*/
-#header-nav{
-	background-color: black;
-	border-radius: 0;
-    border: 0;
+@media (min-width: 576px) {
+    #navbarSupportedContent{
+	padding-left: 0px;
+	padding-right: 0px;
+
 }
+}
+
+
+@media (min-width: 768px) { 
+ }
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) { }
