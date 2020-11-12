@@ -1,0 +1,186 @@
+body{
+  background-color: powderblue;
+}
+h2{
+  text-align: center;
+  margin-top: 30px;
+}
+.menu-item-tile{
+  background-color: gray;
+    margin-top: 25px;
+  margin-left: -45px;
+    margin-right: -45px;
+}
+.menu-item-tile .menu-item-title{
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#title{
+  background-color: ;
+  border: 1px solid black;
+  padding: 5px 30px;
+}
+.menu-item-description{
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}
+
+
+
+
+
+
+<h2>Our Menu</h2>
+    <div class="container">
+      <section class="col">
+      <div class="menu-item-tile" id="Chicken">
+          <div class="menu-item-title"><span id="title">Chicken</span></div>
+          <div class="menu-item-description">lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo r in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo r in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.
+            </div>
+        </div>
+        <div class="menu-item-tile" id="Beef">
+          <div class="menu-item-title"><span id="title">Beef</span></div>
+          <div class="menu-item-description">lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo r in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo r in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.
+            </div>
+        </div>
+        <div class="menu-item-tile" id="Sushi">
+          <div class="menu-item-title"><span id="title">Sushi</span></div>
+          <div class="menu-item-description">lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo r in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.lorem ipsum dolor sit amet,constetuter adiplisicing elit, sed do eiusmod tempor inclididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo r in reprenderit in voluptate velit esse cillum dolore eu fuigiat nulla partiatur. Excepteur sint occaecat cupidatat non proident, sunt in cupla qui officia deserunt mollit anim is est laborum.
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Index: module3-solution</title>
+  <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css\style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale= 1">
+</head>
+<body bgcolor="blue">
+    <script src="C:\Users\Asus\Coursera\module3-solution\js\jquery-1.11.3.min.js"></script>
+    <script src="C:\Users\Asus\Coursera\module3-solution\js\bootstrap.min.js"></script>
+    <!--script src="js/script.js"></script-->
+     <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Food,LLC</h1></a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Chicken</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Beef</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Sushi</a>
+            </li>
+          
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+    
+
+</body>
+</html>
