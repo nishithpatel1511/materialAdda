@@ -1,0 +1,23 @@
+/*h1{
+	text-align: center;
+	margin-top: 0px;
+	padding: 25px;
+	background-color: black;
+	color: orange;
+}
+.hr-menu{
+	margin-top: -40PX;
+}
+.hr-menu h2{
+	float: left;
+    padding-right: 60px;
+    background-color: powderblue;
+    padding-left: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}*/
+#header-nav{
+	background-color: black;
+	border-radius: 0;
+    border: 0;
+}
