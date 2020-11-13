@@ -1,15 +1,13 @@
-#navbarSupportedContent{
-	padding-left: 270px;
-	padding-right: 10px;
 
-}
 
 #main_navbar{
-	height: 80px;
-	background-color: black;
-}
 
+	background-color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 /*orange colour*/
+
 #main_navbar h2{
       color: orange;
 }
@@ -27,24 +25,24 @@
 }
 
 /*dropdown*/
+
 .dropdown-menu{
 	background-color: black;
 }
 
-
 .navbar-toggler{
-	height: 30px;
-	width: 30px;
-    border: 0px;
-}
-.navbar-toggler-icon{
-	background-color: white;
-	width: 20px;
+    background-color: white;
 }
 .nav-item{
 	color: orange;
 }
+footer{
+	background-color: gray;
+}
 
+.panel-footer .container{
+	padding-top: 20px;
+}
 
 /*media quer*/
 @media (max-width: 575.98px) { 
@@ -89,4 +87,9 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) { }
 
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    #navbarSupportedContent{
+	    padding-left: 270px;
+	    padding-right: 10px;
+    }
+}
