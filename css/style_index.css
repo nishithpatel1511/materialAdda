@@ -19,6 +19,7 @@
 }
 .navbar-light .navbar-nav .nav-link:hover {
 	color: blue;
+	background-color: white;
 }
 .dropdown-item{
 	color: powderblue;
@@ -43,7 +44,9 @@ footer{
 .panel-footer .container{
 	padding-top: 20px;
 }
-
+.image img{
+	height: 150px;
+}
 /*media quer*/
 @media (max-width: 575.98px) { 
     
@@ -57,7 +60,10 @@ footer{
     	padding-left: 15px;
 	background-color: gray;
 	opacity: 100%;
-}
+    }
+    .image img{
+    	padding-left: 20px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
