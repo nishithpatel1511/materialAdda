@@ -76,11 +76,10 @@ footer{
     .image img{
     	padding-left: 20px;
     }
+    
     .panel-footer .container{
+	    padding-left: 0px;
 	    text-align: center;
-	    padding: 0px;
-	    padding-top: 20px;
-	    padding-bottom:10px;
     }
 }
 
