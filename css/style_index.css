@@ -1,5 +1,4 @@
 
-
 #main_navbar{
 
 	background-color: black;
@@ -37,12 +36,16 @@
 .nav-item{
 	color: orange;
 }
+
 footer{
-	background-color: gray;
+	background-color: black;
 }
 
 .panel-footer .container{
 	padding-top: 20px;
+	padding-bottom: 20px;
+    padding-left: 40px;
+    color: white;
 }
 .image img{
 	height: 150px;
@@ -78,9 +81,6 @@ footer{
     	padding-left: 15px;
 	    background-color: gray;
 	    opacity: 100%; 
-    }
-    .row featurette{
-    	float: left;
     }
 }
 
