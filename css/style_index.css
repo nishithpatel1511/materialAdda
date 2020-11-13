@@ -74,9 +74,6 @@ footer{
 	padding-top: 20px;
 	padding-bottom:10px;
 }
-    .row{
-    	padding-bottom: 0px;
-    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
