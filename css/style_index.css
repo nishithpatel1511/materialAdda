@@ -125,4 +125,11 @@ footer{
 	    height: 155px;
 	    width: 320px;
     }
+    .dropdown-item{
+	background-color: gray;
+	color: black;
+    } 
+    .dropdown-menu{
+	    background-color: gray;
+    }
 }
