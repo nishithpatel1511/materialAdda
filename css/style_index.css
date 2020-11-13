@@ -1,12 +1,10 @@
-
+/*header*/
 #main_navbar{
 
 	background-color: black;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-/*orange colour*/
-
 #main_navbar h2{
       color: orange;
 }
@@ -19,23 +17,39 @@
 .navbar-light .navbar-nav .nav-link:hover {
 	color: blue;
 }
-.dropdown-item{
-	background-color: white;
-	color: black;
-}
-
-/*dropdown*/
-
-.dropdown-menu{
-	background-color: black;
-}
-
 .navbar-toggler{
     background-color: white;
 }
 .nav-item{
 	color: orange;
 }
+
+/*dropdown*/
+.dropdown-item{
+	background-color: white;
+	color: black;
+}
+.dropdown-menu{
+	background-color: black;
+}
+
+
+
+/*cotent*/
+#content{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#sub-tile{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.image img{
+	height: 150px;
+	width: 300px;
+}
+
+/*footer*/
 
 footer{
 	background-color: black;
@@ -47,17 +61,14 @@ footer{
     padding-left: 40px;
     color: white;
 }
-.image img{
-	height: 150px;
-}
-/*media quer*/
+
+/*media query*/
 @media (max-width: 575.98px) { 
     
     #navbarSupportedContent{
     	padding-top: 15px;
 	    padding-left: 10px;
 	    padding-right: 10px;
-
     }
     #navbar-list{
     	padding-left: 15px;
@@ -66,23 +77,19 @@ footer{
     .image img{
     	padding-left: 20px;
     }
-
-
-.panel-footer .container{
-	text-align: center;
-	padding: 0px;
-	padding-top: 20px;
-	padding-bottom:10px;
-}
+    .panel-footer .container{
+	    text-align: center;
+	    padding: 0px;
+	    padding-top: 20px;
+	    padding-bottom:10px;
+    }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    
+@media (min-width: 576px) and (max-width: 767.98px) {  
     #navbarSupportedContent{
     	padding-top: 15px;
 	    padding-left: 20px;
 	    padding-right: 20px;
-
     }
     #navbar-list{
     	padding-left: 15px;
@@ -113,5 +120,9 @@ footer{
     }
     .navbar-light .navbar-nav .nav-link:hover {
 	    background-color: white;
+    }
+    .image img{
+	    height: 155px;
+	    width: 320px;
     }
 }
