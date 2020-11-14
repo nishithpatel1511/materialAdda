@@ -32,9 +32,10 @@
 .dropdown-menu{
 	background-color: black;
 }
-/*end header*/
+
 
 /*footer*/
+
 footer{
 	background-color: black;
 }
@@ -45,7 +46,6 @@ footer{
     padding-left: 40px;
     color: white;
 }
-/*end footer*/
 
 /*media query*/
 @media (max-width: 575.98px) { 
@@ -59,7 +59,7 @@ footer{
 	    background-color: black;
     }
     .panel-footer .container{
-    	padding: 0px;
+	    padding-left: 0px;
 	    text-align: center;
     }
 }
