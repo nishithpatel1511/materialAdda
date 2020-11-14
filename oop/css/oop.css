@@ -32,7 +32,10 @@
 .dropdown-menu{
 	background-color: black;
 }
-
+/*path*/
+.breadcum-item{
+    text-decoration: none;
+}
 
 /*footer*/
 
