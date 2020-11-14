@@ -32,7 +32,16 @@
 .dropdown-menu{
 	background-color: black;
 }
-
+/*content*/
+#content-tile{
+    margin-right:0px;
+}
+.card{
+    border: 1px black solid;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
 
 /*footer*/
 
