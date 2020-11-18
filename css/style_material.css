@@ -32,32 +32,8 @@
 .dropdown-menu{
 	background-color: black;
 }
-/*content*/
-#content-tile{
-    margin-right:0px;
-}
-.card{
-    border: 1px black solid;
-    margin-top: 20px;
-    padding-bottom: 10px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-}
-/*card*/
-.circle-card{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.circle-title{
-    padding-top: 60px; 
-    text-align: center;
-}
-#exp-button{
-    margin-top: 10px;
-}
+
+
 /*footer*/
 
 footer{
@@ -81,6 +57,9 @@ footer{
     #navbar-list{
     	padding-left: 15px;
 	    background-color: black;
+    }
+    .image img{
+    	padding-left: 20px;
     }
     
     .panel-footer .container{
@@ -131,6 +110,10 @@ footer{
     }
     .navbar-light .navbar-nav .nav-link:hover {
 	    background-color: white;
+    }
+    .image img{
+	    height: 155px;
+	    width: 320px;
     }
     .dropdown-item{
 	    background-color: gray;
