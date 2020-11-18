@@ -32,8 +32,14 @@
 .dropdown-menu{
 	background-color: black;
 }
-
-
+/*content*/
+#content-box{
+    justify-content: center;
+}
+.card{
+    margin:20px;
+    border-radius: 15px;
+}
 /*footer*/
 
 footer{
@@ -65,6 +71,11 @@ footer{
     .panel-footer .container{
 	    padding-left: 0px;
 	    text-align: center;
+    }
+    .card{
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
