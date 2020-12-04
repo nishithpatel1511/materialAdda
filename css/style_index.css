@@ -40,23 +40,39 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+#sub{
+    animation: subname;
+    animation-duration: 2s;
+}
+@keyframes subname{
+    0%{font-size: 0.8em;}
+}
+
+
 #sub-tile{
 	padding-top: 15px;
 	padding-bottom: 15px;
     position: relative;
     animation-name: fade-in;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @keyframes fade-in{
-    0%{opacity: 0}
+    0%{opacity: 0.1}
     100%{opacity: 1}
 }
 
 .image img{
 	height: 150px;
 	width: 300px;
+    position: relative;
+    animation-name: img;
+    animation-duration: 2s;
 }
 
+@keyframes img{
+    0%{left: -30px;}
+    100%{left: 0px}
+}
 
 /*footer*/
 
@@ -85,7 +101,11 @@ footer{
     .image img{
     	padding-left: 20px;
     }
-    
+    @keyframes img{
+        0%{bottom: -30px;}
+        100%{bottom: 0px}
+    }
+ 
     .panel-footer .container{
 	    padding-left: 0px;
 	    text-align: center;
