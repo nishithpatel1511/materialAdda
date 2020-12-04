@@ -43,11 +43,20 @@
 #sub-tile{
 	padding-top: 15px;
 	padding-bottom: 15px;
+    position: relative;
+    animation-name: fade-in;
+    animation-duration: 4s;
 }
+@keyframes fade-in{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
 .image img{
 	height: 150px;
 	width: 300px;
 }
+
 
 /*footer*/
 

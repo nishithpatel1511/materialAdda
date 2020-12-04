@@ -51,6 +51,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 10px 10px 10px 5px #dcdcdc;
+    animation-duration: 1.2s;
+    animation-name: circlecard;
 }
 .circle-title{
     padding-top: 50px; 
@@ -58,6 +60,29 @@
 }
 #exp-button{
     margin-top: 8px;
+}
+@keyframes circlecard{
+    0%{opacity: 0.1}
+    100%{opacity: 1}
+}
+#first{
+    position: relative;
+    animation-duration: 1.2s;
+    animation-name: topfloat; 
+
+}
+@keyframes topfloat{
+    0%{top: -20px;}
+    100%{top: 0px;}
+}
+#last{
+    position: relative;
+    animation-duration: 1.2s;
+    animation-name: lastfloat;
+}
+@keyframes lastfloat{
+    0%{top: 20px; }
+    100%{top: 0px;}
 }
 /*footer*/
 
