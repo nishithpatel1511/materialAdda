@@ -45,7 +45,7 @@
 	padding-bottom: 15px;
     position: relative;
     animation-name: fade-in;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 @keyframes fade-in{
     0%{opacity: 0}
