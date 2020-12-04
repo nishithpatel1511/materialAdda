@@ -38,6 +38,9 @@
 
 footer{
 	background-color: black;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
 }
 
 .panel-footer .container{
