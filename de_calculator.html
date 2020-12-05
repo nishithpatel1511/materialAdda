@@ -6,6 +6,93 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css\style_home.css">
     <title>Digital Electronics</title>
+    <script type="text/javascript">
+      function decimaltobinary() {
+      var d1 = new Array();
+      var d2 = new Array();
+      var nd = prompt("enter the number (Decimal TO Binary): ");
+      document.getElementById("que").innerHTML=nd;
+      var x = nd.split(".");
+      var n = parseInt(x[0]);
+      i = 0;
+      while (n >= 1) {
+
+        if (n % 2 == 0) {
+          d1[i] = '0';
+        }
+        else {
+          d1[i] = '1';
+        }
+        n = n / 2;
+        i++;
+      }
+      d1.reverse();
+
+      n = parseInt(x[1]);
+      n = n * Math.pow(10, -(x[1].length));
+      for (i = 0; i < 15; i++) {
+        n = n * 2;
+        if (n >= 1) {
+          d2[i] = '1';
+          if (n == 1) {
+            break;
+          }
+          else {
+            n = n - 1;
+          }
+        }
+        else {
+          d2[i] = '0';
+        }
+      }
+      n = parseFloat(d1.join("") + "." + d2.join(""));
+      document.getElementById("ans").innerHTML=n;
+      document.getElementById("opr").innerHTML="Decimal To Binary";
+    }
+    function binarytodecimal() {
+      var x = new Array();
+      nb = prompt("Enter number (binary to decimal): ");
+      document.getElementById("que").innerHTML=nb;
+      x = nb.split(".");
+      n = x[0].length - 1;
+      s1 = 0;
+      for (i = 0; i < x[0].length; i++) {
+        s1 = s1 + Math.pow(2, n) * parseInt(x[0][i]);
+        n = n - 1;
+      }
+      s2 = 0;
+      n = -1;
+      if (x[1] != null) {
+        for (i = 0; i < x[1].length; i++) {
+          s2 = s2 + Math.pow(2, n) * parseInt(x[1][i]);
+          n = n - 1;
+        }
+      }
+      document.getElementById("ans").innerHTML=(s1 + s2);
+      document.getElementById("opr").innerHTML="Binary To Decimal";
+    }
+    </script>
+    <style type="text/css">
+      
+      button{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+      }
+      #info{
+        margin-left: 15px;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 575.98px) { 
+      button{
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    }
+}
+    </style>
   </head>
   <body>
 
@@ -82,76 +169,19 @@
     </form-->
   </nav>    
 </header>
-
-<div class="d-none d-sm-block">
-<div class="row" id="content-tile">
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Assignment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="de_assignment.html" class="btn btn-primary">Explore</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Material</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="de_material.html" class="btn btn-primary">Explore</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Practical</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="de_practical.html" class="btn btn-primary">Explore</a>
-      </div>
-    </div>
-  </div>
+<div id="info">
+<p><b>Enterd Number </b>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="que"></span></p>
+<p><b>Answer</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="ans"></span></p>
+<p><b>Operation</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="opr"></span></p>
 </div>
-</div>
-<div class="d-block d-sm-none">
-  <center>
-    <div  class="circle-card bg-danger text-white" id="first">
-        <h4 class="circle-title">Chapter</h4> 
-        <svg width="3em" height="1.2em" viewBox="0 0 14 14" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-</svg>       
-        <center><a href="de_material.html" class="btn btn-primary" id="exp-button">Explore</a></center>
-    </div>
-    <div  class="circle-card bg-warning text-white">
-        <h4 class="circle-title">Assignment</h4>  
-        <svg width="3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-journal-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-  <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"/>
-</svg>      
-        <center><a href="de_assignment.html" class="btn btn-primary" id="exp-button">Explore</a></center>
-    </div>
-
-    <div  class="circle-card bg-success text-white">
-        <h4 class="circle-title">Practical</h4> 
-        <svg width="3em" height="1.2em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
-</svg>      
-        <center><a href="de_practical.html" class="btn btn-primary" id="exp-button">Explore</a></center>
-    </div>
-    <div  class="circle-card bg-info text-white" id="last">
-        <h4 class="circle-title">Calculator</h4> 
-        <svg width="3em" height="1.2em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
-  <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"/>
-
-</svg>       
-        <center><a href="de_calculator.html" class="btn btn-primary" id="exp-button">open</a></center>
-    </div>
-  </center>
-</div>
-
+<center>
+<button type="button" class="btn btn-danger" onclick="decimaltobinary()">Decimal To Binary</button>
+<button type="button" class="btn btn-primary" onclick="binarytodecimal()">Binary to Decimal</button>
+<button type="button" class="btn btn-success">Decimal To Octal</button>
+<button type="button" class="btn btn-warning">Octal TO Decimal</button>
+<button type="button" class="btn btn-info">Decimal To Hexadecimal</button>
+<button type="button" class="btn btn-dark">Hexadecimal To Binary</button>
+</center>
 
 <footer class="panel-footer">
     <div class="container">

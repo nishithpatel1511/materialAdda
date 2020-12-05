@@ -82,7 +82,7 @@
     animation-name: lastfloat;
 }
 @keyframes lastfloat{
-    0%{top: 20px; }
+    0%{top: 20px; box-shadow: none;}
     100%{top: 0px;}
 }
 /*footer*/
