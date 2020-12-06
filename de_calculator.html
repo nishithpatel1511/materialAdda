@@ -16,18 +16,17 @@
       var n = parseInt(x[0]);
       i = 0;
       while (n >= 1) {
-
         if (n % 2 == 0) {
           d1[i] = '0';
         }
         else {
           d1[i] = '1';
         }
-        n = n / 2;
+        n = parseInt(n / 2);
         i++;
       }
       d1.reverse();
-
+       
       n = parseInt(x[1]);
       n = n * Math.pow(10, -(x[1].length));
       for (i = 0; i < 15; i++) {
