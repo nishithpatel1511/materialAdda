@@ -167,3 +167,15 @@ footer{
 	    background-color: gray;
     }
 }
+
+
+
+/*temp*/
+@media (max-width: 575.98px) { 
+    #navbarSupportedContent{
+        float: left;
+    }
+    .nav-item{
+        float: left;
+    }
+}
