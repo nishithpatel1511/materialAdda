@@ -1,173 +1,177 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style_index.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <title>Home page</title>
-    <style>
-      #col-megamenu1{
-      padding-left: 33.3%;  
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style_index.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Home page</title>
+  <style>
+    #col-megamenu1 {
+      padding-left: 33.3%;
     }
-    #col-megamenu2{
+
+    #col-megamenu2 {
       padding-right: 33.3%;
 
     }
-    .dropdown-menu{
-      background-color:white;
+
+    .dropdown-menu {
+      background-color: white;
     }
-    #first,#second{
-      padding-top: 15px;;
+
+    #first,
+    #second {
+      padding-top: 15px;
       margin-left: 0;
       margin-right: 0;
-      padding-bottom : 15px;
+      padding-bottom: 15px;
     }
-      @media all and (min-width: 992px) {
-      .navbar {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
 
-      .navbar .has-megamenu {
-        position: static !important;
-      }
+    .navbar .has-megamenu {
+      position: static !important;
+    }
 
-      .navbar .megamenu {
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 20px;
-      }
-
-      .navbar .nav-link {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    .navbar .megamenu {
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+    }
+    @media (min-width: 991.99px) and (max-width: 1080px)
+    {
+      #navbar-megamenu{
+        padding-right: -50px;
       }
     }
-    </style>
+  </style>
 
-  </head>
-  <body>
+</head>
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light" id="main_navbar">
-    <a class="navbar-brand" href="#"><h2>Material Adda</h2></a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" id="main_navbar">
+      <a class="navbar-brand" href="#">
+        <h2>Material Adda</h2>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul id="navbar-list" class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="https://nishithpatel1511.github.io/materialAdda/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Books
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Maths</a>
-            <a class="dropdown-item" href="#">DBMS</a>
-            <a class="dropdown-item" href="#">DE</a>
-            <a class="dropdown-item" href="#">DS</a>
-            <a class="dropdown-item" href="#">OOP</a>          
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Material
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="maths_material.html">Maths</a>
-            <a class="dropdown-item" href="dbms_material.html">DBMS</a>
-            <a class="dropdown-item" href="de_material.html">DE</a>
-            <a class="dropdown-item" href="ds_material.html">DS</a>
-            <a class="dropdown-item" href="oop_material.html">OOP</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Assignments
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="maths_assignment.html">Maths</a>
-            <a class="dropdown-item" href="dbms_assignment.html">DBMS</a>
-            <a class="dropdown-item" href="de_assignment.html">DE</a>
-            <a class="dropdown-item" href="ds_assignment.html">DS</a>
-            <a class="dropdown-item" href="oop_assignment.html">OOP</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Practicals
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="navbar-list" class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://nishithpatel1511.github.io/materialAdda/">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Books
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Maths</a>
+              <a class="dropdown-item" href="#">DBMS</a>
+              <a class="dropdown-item" href="#">DE</a>
+              <a class="dropdown-item" href="#">DS</a>
+              <a class="dropdown-item" href="#">OOP</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Material
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="maths_material.html">Maths</a>
+              <a class="dropdown-item" href="dbms_material.html">DBMS</a>
+              <a class="dropdown-item" href="de_material.html">DE</a>
+              <a class="dropdown-item" href="ds_material.html">DS</a>
+              <a class="dropdown-item" href="oop_material.html">OOP</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Assignments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="maths_assignment.html">Maths</a>
+              <a class="dropdown-item" href="dbms_assignment.html">DBMS</a>
+              <a class="dropdown-item" href="de_assignment.html">DE</a>
+              <a class="dropdown-item" href="ds_assignment.html">DS</a>
+              <a class="dropdown-item" href="oop_assignment.html">OOP</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Practicals
+            </a>
+            <!--div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="maths_practical.html">Maths</a>
             <a class="dropdown-item" href="dbms_practical.html">DBMS</a>
             <a class="dropdown-item" href="de_practical.html">DE</a>
             <a class="dropdown-item" href="ds_practical.html">DS</a>
             <a class="dropdown-item" href="oop_practical.html">OOP</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown has-megamenu show">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Practicals
-          </a>
-          <div class="dropdown-menu megamenu"style="max-width: 225px;">
-            <center>
-              <div class="row" id="first">
-                <div style="width: 33.3%;">
-                  <div class="col-megamenu">
-                    <a href="maths_practical.html">
-                      <i class='fas fa-calculator' style='font-size:25px'></i>
-                      <h6>Maths</h6>
-                    </a>
+          </div-->
+            <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown" style="width: 225px;" id="navbar-megamenu">
+              <center>
+                <div class="row" id="first">
+                  <div style="width: 33.3%;">
+                    <div class="col-megamenu">
+                      <a href="maths_practical.html">
+                        <i class='fas fa-calculator' style='font-size:25px'></i>
+                        <h6>Maths</h6>
+                      </a>
+                    </div>
+                  </div>
+                  <div style="width: 33.3%;">
+                    <div class="col-megamenu">
+                      <a href="de_practical.html">
+                        <i class="fas fa-microchip" style='font-size:25px'></i>
+                        <h6>DE</h6>
+                      </a>
+                    </div>
+                  </div>
+                  <div style="width: 33.3%;">
+                    <div class="col-megamenu">
+                      <a href="dbms_practical.html">
+                        <i class="fas fa-database" style='font-size:25px'></i>
+                        <h6>DBMS</h6>
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div style="width: 33.3%;">
-                  <div class="col-megamenu">
-                    <a href="de_practical.html">
-                      <i class="material-icons" style='font-size:25px'>memory</i>
-                      
-                      <h6>DE</h6>
-                    </a>
+                <div class="row" id="second">
+                  <div style="width: 50%;">
+                    <div class="col-megamenu" id="col-megamenu1">
+                      <a href="ds_practical.html">
+                        <i class="fas fa-sitemap" style='font-size:25px'></i>
+                        <h6>DS</h6>
+                      </a>
+                    </div>
+                  </div>
+                  <div style="width: 50%;">
+                    <div class="col-megamenu" id="col-megamenu2">
+                      <a href="oop_practical.html">
+                        <i class="fab fa-java" style='font-size:25px'></i>
+                        <h6>OOP</h6>
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div style="width: 33.3%;">
-                  <div class="col-megamenu">
-                    <a href="dbms_practical.html">
-                      <i class='fas fa-calculator' style='font-size:25px'></i>
-                      <h6>DBMS</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="row" id="second">
-                <div style="width: 50%;">
-                  <div class="col-megamenu" id="col-megamenu1">
-                    <a href="ds_practical.html">
-                      <i class='fas fa-calculator' style='font-size:25px'></i>
-                      <h6>DS</h6>
-                    </a>
-                  </div>
-                </div>
-                <div style="width: 50%;">
-                  <div class="col-megamenu" id="col-megamenu2">
-                    <a href="oop_practical.html">
-                      <i class='fas fa-calculator' style='font-size:25px'></i>
-                      <h6>OOP</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </center>
-          </div>
-        </li>
-      </ul>
-    </div>
-  <!--button class="navbar-toggler" type="button">
+              </center>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <!--button class="navbar-toggler" type="button">
   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
   <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
@@ -177,22 +181,22 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchbtn">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="search()">Search</button>
     </form-->
-  </nav>    
-</header>
+    </nav>
+  </header>
 
-<script type="text/javascript">
-  function search() {
-    var a=document.getElementById('searchbtn').value ;
-    alert(a);
-  }
+  <script type="text/javascript">
+    function search() {
+      var a = document.getElementById('searchbtn').value;
+      alert(a);
+    }
 
-</script>
-<!--content-->
-<div id="content" class="container marketing">
+  </script>
+  <!--content-->
+  <div id="content" class="container marketing">
 
-    
+
     <div id="sub-tile" class="row featurette">
-      <div class="col-md-7 order-md-2">     
+      <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading" id="sub">MATHS</h2>
         <p class="lead">Algebra , Statictics and more..</p>
         <p><a href="maths.html" class="btn btn-outline-primary btn-lg " tabindex="-1" role="button"
@@ -200,7 +204,7 @@
       </div>
       <div class="image">
         <img src="images/maths.jpg">
-      </div>     
+      </div>
     </div>
     <hr class="featurette-divider">
 
@@ -215,9 +219,9 @@
         <img src="images/ds.jpg">
       </div>
     </div>
-    
+
     <hr class="featurette-divider">
-    
+
     <div id="sub-tile" class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading" id="sub">OBJECT ORIENTED PROGRAMMING</h2>
@@ -231,7 +235,7 @@
     </div>
 
     <hr class="featurette-divider">
-    <div  id="sub-tile" class="row featurette">
+    <div id="sub-tile" class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading" id="sub">DBMS</h2>
         <p class="lead">SQL, Algebra Tool and more..</p>
@@ -255,38 +259,51 @@
         <img src="images/de.jpg">
       </div>
     </div>
-</div>
+  </div>
 
 
-<footer class="panel-footer">
+  <footer class="panel-footer">
     <div class="container">
       <div class="row">
         <section id="dev" class="col-sm-4">
-          <span><h4>Web Developed by</h4></span>
+          <span>
+            <h4>Web Developed by</h4>
+          </span>
           Nishith Patel<br>
           Priyansh Patel<br>
         </section>
         <section id="dev" class="col-sm-4">
-          <span><h4>Content created by</h4></span>
+          <span>
+            <h4>Content created by</h4>
+          </span>
           <p>
-          Shubh Patel<br>
-          Henil Patel
+            Shubh Patel<br>
+            Henil Patel
           </p>
           <hr class="visible-xs">
         </section>
         <section id="address" class="col-sm-4 d-none d-sm-block">
-          <span><h4>Address:</h4></span>
+          <span>
+            <h4>Address:</h4>
+          </span>
           Ganpat Vidhyanagar<br>
           mehsana gojariya Road<br>
-          mehsana,  384012
+          mehsana, 384012
           <hr class="visible-xs">
         </section>
       </div>
       <div class="text-center" id="copyright"><br>&copy; Copyright Material Adda 2020</div>
     </div>
   </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
