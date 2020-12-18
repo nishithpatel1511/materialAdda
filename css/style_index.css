@@ -32,8 +32,55 @@
 .dropdown-menu{
 	background-color: black;
 }
+/*new*/
+#col-megamenu1 {
+    padding-left: 33.3%;
+  }
 
+  #col-megamenu2 {
+    padding-right: 33.3%;
 
+  }
+
+  .dropdown-menu {
+    background-color: white;
+  }
+
+  #first,
+  #second {
+    padding-top: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .circle-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    
+  }
+  .circle-btn i{
+    padding-top: 18.5px;
+    text-align: center;
+    color: black;
+  }
+  a h6{
+     color: black; 
+  }
+
+  /*new*/
 
 /*cotent*/
 #content{
