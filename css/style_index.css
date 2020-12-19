@@ -6,7 +6,7 @@
 	padding-bottom: 20px;
 }
 #main_navbar h2{
-      color: orange;
+    color: orange;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #d3d3d3;
@@ -36,16 +36,13 @@
 #col-megamenu1 {
     padding-left: 33.3%;
   }
-
 #col-megamenu2 {
     padding-right: 33.3%;
 
 }
-
 .dropdown-menu {
     background-color: white;
 }
-
 #first,
 #second {
     padding-top: 15px;
@@ -53,32 +50,50 @@
     margin-right: 0;
     padding-bottom: 15px;
 }
-
 .navbar .has-megamenu {
     position: static !important;
 }
-
-.navbar .megamenu {
+/*.navbar .megamenu {
   left: 0;
   right: 0;
   width: 100%;
   padding: 20px;
-}
+}*/
 .circle-btn{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
 }
 .circle-btn i{
-  padding-top: 18.5px;
-  text-align: center;
-  color: black;
+    padding-top: 15.5px;
+    text-align: center;
+    color: black;
 }
 a h6{
-   color: black; 
+    color: black; 
 }
-
+#navbar-megamenu{
+    width: 270px;
+}
+.circle-btn i{
+    font-size: 20px;
+}
+.col-megamenu a{
+    text-decoration: none;
+}
+@media(min-width: 991.99px) and (max-width: 1076px){
+    #navbar-megamenu{
+        right: 0;
+        left: auto;
+    }
+}
+@media(min-width: 1199.99px) and (max-width: 1295px){
+    #navbar-megamenu{
+        right: 0;
+        left: auto;
+    }
+}
 /*new*/
 
 /*cotent*/
@@ -93,7 +108,6 @@ a h6{
 @keyframes subname{
     0%{font-size: 0.8em;}
 }
-
 
 #sub-tile{
 	padding-top: 15px;
@@ -191,6 +205,9 @@ footer{
     .dropdown-menu{
 	    background-color: gray;
     }
+    #navbar-megamenu{
+        width: 220px;
+    }
 }
 
 @media (min-width: 1200px) { 
@@ -212,16 +229,7 @@ footer{
     .dropdown-menu{
 	    background-color: gray;
     }
-}
-
-
-
-/*temp*/
-@media (max-width: 575.98px) { 
-    #navbarSupportedContent{
-        float: left;
-    }
-    .nav-item{
-        float: left;
+    #navbar-megamenu{
+        width: 220px;
     }
 }
