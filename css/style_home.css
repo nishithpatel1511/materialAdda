@@ -1,4 +1,3 @@
-
 /*header*/
 #main_navbar{
 
@@ -7,7 +6,7 @@
 	padding-bottom: 20px;
 }
 #main_navbar h2{
-      color: orange;
+    color: orange;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #d3d3d3;
@@ -26,13 +25,68 @@
 }
 
 /*dropdown*/
-.dropdown-item{
-	background-color: white;
-	color: black;
+
+#col-megamenu1 {
+    padding-left: 33.3%;
+  }
+#col-megamenu2 {
+    padding-right: 33.3%;
+
 }
-.dropdown-menu{
-	background-color: black;
+.dropdown-menu {
+    background-color: white;
 }
+#first,
+#second {
+    padding-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+}
+.navbar .has-megamenu {
+    position: static !important;
+}
+#navbar-megamenu-last,
+#navbar-megamenu{
+    width: 270px;
+}
+
+/*circle button*/
+
+.circle-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.circle-btn i{
+    padding-top: 14.5px;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+a h6{
+    color: black; 
+}
+.col-megamenu a{
+    text-decoration: none;
+}
+
+/*media query: (left or right dropdown)*/
+@media(min-width: 991.99px) and (max-width: 1100px){
+    #navbar-megamenu-last{
+        right: 0;
+        left: auto;
+    }
+}
+@media(min-width: 1199.99px) and (max-width: 1320px){
+    #navbar-megamenu-last{
+        right: 0;
+        left: auto;
+    }
+}
+/*end dropdown*/
+
+
 /*content*/
 #content-tile{
     margin-right:0px;
